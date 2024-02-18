@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ticketing</title>
+    <!-- Tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <section class="md:container md:mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination </a></li>
+                        <li><a>Search </a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination </a></li>
+                    <li><a>Search </a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn p-4">
+                    Bus
+                    <img src="images/bus-icon.png" alt="">
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- navbar end here -->
+    <!-- Banner section starts here -->
+    <section class="md:container md:mx-auto">
+        <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold  w-[600px] h-[100px]">End-to-End Travel with <br> <span
+                            class="text-[#1DD100]">P Paribahan</span> </h1>
+                    <p class="mb-5 w-[600px] h-[50px] font-normal text-lg"> Yes, you can run unit tests and view the
+                        results directly within the app. The <br> integrated testing features allow for a streamlined .
+                    </p>
+                    <button class="btn bg-[#1DD100]">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section ends here -->
+    <!-- Best offer section starts here -->
+    <div>
+        <h2 class="text-3xl font-bold text-black text-center mt-2">Best offers for you</h2>
+    </div>
+    <section class="md:container md:mx-auto">
+        <div class="flex justify-center items-center mt-8 mb-4 gap-4">
+            <div class="bg-[#FFBF0F] flex w-1/2 border h-[200px] gap-6 pl-20">
+                <div class="flex flex-col justify-center items-center">
+                    <div>
+                        <h1 class="text-3xl text-black">15% OFF</h1>
+                        <p class="text-xl text-black">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                </div>
+                <div class=" flex flex-col justify-center items-center">
+                    <div>
+                        <h1 class="text-3xl text-black">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#F78C9C] flex w-1/2 border h-[200px] gap-6 pl-20">
+                <div class="flex flex-col justify-center items-center">
+                    <div>
+                        <h1 class="text-3xl text-black">20% OFF</h1>
+                        <p class="text-xl text-black">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div>
+                        <h1 class="text-3xl text-black">Couple 20</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best offer section ends here -->
+    <section class="md:container md:mx-auto">
+        <section>
+            <h1 class="text-3xl font-bold text-black text-center mt-2">P.H Paribahan</h1>
+            <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The
+                integrated</p>
+            <p class="text-center">testing features allow for a streamlined .</p>
+        </section>
+        <section>
+            <!-- overall div -->
+            <div class="grid grid-cols-3 gap-4 mt-5 rounded-3xl bg-[#FFFFFF]">
+                <div class="col-span-2 pl-20 border pt-4">
+                    <!-- first div kaj korbo -->
+                    <div class="gap-10">
+                        <!-- first part -->
+                        <div class="flex justify-between">
+                            <div class="flex gap-5">
+                                <div>
+                                    <img src="images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="text-3xl text-black">Greenline Paribahan</h3>
+                                    <p class="text-2xl">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex bg-[#1DD10026] pt-2 pr-2">
+                                <div>
+                                    <img src="images/seat-green.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-2xl">8 Seats left</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                    <!-- second div kaj korbo -->
+                    <div class="rounded-xl pt-8 pr-4 pb-8">
+                        <div class="flex justify-between pb-2">
+                            <div>
+                                <p>Route</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-semibold">Dhaka - Sylhet</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between pt-2 pb-2">
+                            <div>
+                                <p>Departure Time</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-semibold">9:00 PM</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between pt-2 pb-2">
+                            <div>
+                                <p class="rounded-xl bg-[#0307120D] p-5">Boarding Point - Laxmipur</p>
+                            </div>
+                            <div>
+                                <p class="rounded-xl bg-[#0307120D] p-5">Dropping Point - Bogura</p>
+                            </div>
+                            <div>
+                                <p class="rounded-xl bg-[#0307120D] p-5">Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex items-center gap-10">
+                    <div>
+                        <img src="images/info-devider.png" alt="">
+                    </div>
+                    <div>
+                        <img src="images/fare.png" alt="">
+                        <h3 class="text-2xl text-black">550 Taka</h3>
+                        <p>Per Seat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>Select Your Seat</h1>
+                <hr>
+                <div class="flex justify-between">
+                    <div class="flex">
+                        <img src="images/seat-gray.png" alt="">
+                        <p>Available</p>
+                    </div>
+                    
+                    <div class="flex">
+                        <img src="images/seat-green-filled.png" alt="">
+                        <p class="bg-[#1DD100]">Selected</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </section>
+    <!-- P.H Paribahan section ends here-->
+</body>
+
+</html>
