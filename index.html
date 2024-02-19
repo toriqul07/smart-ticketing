@@ -186,7 +186,7 @@
                             </div>
                         </div>
 
-                        <div class="divider lg:divider-horizontal text-lg font-bold">OR</div> 
+                        <div class="divider lg:divider-horizontal text-lg font-bold">|</div> 
 
                         <!-- right part -->
                         <div class="lg:w-[20%] flex flex-col gap-3 items-center justify-center">
@@ -315,7 +315,27 @@
                             <input class="w-[100%] p-3 border-2 border-gray-300 rounded-lg" type="number" placeholder="Enter your name"><br>
                             <label class="text-lg font-bold" for="">Email*</label><br>
                             <input class="w-[100%] p-3 border-2 border-gray-300 rounded-lg" type="email" placeholder="Enter your name"><br>
-                            <button class="btn bg-[#1DD100] w-[100%] px-4 text-white">Next</button>
+                            <!-- <button class="btn bg-[#1DD100] w-[100%] px-4 text-white">Next</button> -->
+                            <!-- The button to open modal -->
+<label for="my_modal_7" class="btn w-full bg-[#27AE60]">next</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_7" class="modal-toggle"/>
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <img src="images/success.png" alt="">
+    <h3 class="text-lg font-bold">Sucesss</h3>
+    <p class="py-4 text-black">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. Shortly you will find a confirmation in your email.</p>
+    <button class="bg-[#27AE60] p-5">Continue</button>
+  </div>
+  <label class="modal-backdrop" for="my_modal_7">Close</label>
+</div>
+
+
+
+
+
+
                         </div>
                     </div>                
                 </div>
