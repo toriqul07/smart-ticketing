@@ -9,6 +9,7 @@ for(const btn of allbtn)
         else{
         const button_number=e.target;
         const ok =button_number.innerText;
+        btn.style.backgroundColor="green";
       //  console.log(ok);
         cnt=cnt+1;
         cnt1=cnt1-1;
