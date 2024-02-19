@@ -63,6 +63,9 @@ function cupon()
         const main_dis=converted_dis-discout;
        // console.log(main_dis);
        document.getElementById("Grand_Price").innerText=main_dis;
+       const bb=document.getElementById("hide_korbo");
+       //console.log(bb);
+       bb.classList.add("hidden");
     }
     else if(copun_value==="Couple 20")
     {
@@ -73,5 +76,8 @@ function cupon()
         const main_dis=converted_dis-discout;
        // console.log(main_dis);
        document.getElementById("Grand_Price").innerText=main_dis;
+       const bb=document.getElementById("hide_korbo");
+       //console.log(bb);
+       bb.classList.add("hidden");
     }
 }
