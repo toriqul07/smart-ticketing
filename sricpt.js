@@ -33,9 +33,9 @@ for(const btn of allbtn)
 
         const grand_price=document.getElementById("Grand_Price");
         //console.log(grand_price);
-        converted_Grand_price=grand_price.innerText;
+         converted_Grand_price=grand_price.innerText;
         //console.log(converted_Grand_price);
-         conerted_grand_cost=parseInt(converted_Grand_price);
+          conerted_grand_cost=parseInt(converted_Grand_price);
         //  console.log(type of )
          document.getElementById("Grand_Price").innerText=conerted_grand_cost+550;
 
@@ -44,4 +44,29 @@ for(const btn of allbtn)
 function setInnerText(id,value)
 {
     document.getElementById(id).innerText=value;
+}
+function cupon()
+{
+    cupon_text=document.getElementById("cupon_code");
+    copun_value=cupon_text.value;
+    if(copun_value==="NEW15")
+    {
+        const grand_discount_15=document.getElementById("Grand_Price");
+        aa =grand_discount_15.innerText;
+        converted_dis=parseInt(aa);
+        const discout=converted_dis*15/100;
+        const main_dis=converted_dis-discout;
+       // console.log(main_dis);
+       document.getElementById("Grand_Price").innerText=main_dis;
+    }
+    else if(copun_value==="Couple 20")
+    {
+        const grand_discount_20=document.getElementById("Grand_Price");
+        aa =grand_discount_20.innerText;
+        converted_dis=parseInt(aa);
+        const discout=converted_dis*20/100;
+        const main_dis=converted_dis-discout;
+       // console.log(main_dis);
+       document.getElementById("Grand_Price").innerText=main_dis;
+    }
 }
