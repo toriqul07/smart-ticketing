@@ -1,8 +1,12 @@
 const allbtn=document.getElementsByClassName("seat-btn");
-let cnt=0,cnt1=40;
+let cnt=0,cnt1=40,alertt=0;
 for(const btn of allbtn)
 {
+    
     btn.addEventListener("click",function(e){
+        alertt++;
+        if(alertt>4)alert("not click");
+        else{
         const button_number=e.target;
         const ok =button_number.innerText;
       //  console.log(ok);
@@ -38,6 +42,7 @@ for(const btn of allbtn)
           conerted_grand_cost=parseInt(converted_Grand_price);
         //  console.log(type of )
          document.getElementById("Grand_Price").innerText=conerted_grand_cost+550;
+        }
 
     })
 }
